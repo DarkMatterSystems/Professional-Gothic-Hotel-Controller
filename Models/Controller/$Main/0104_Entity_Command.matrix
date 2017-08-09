@@ -1,0 +1,24 @@
+
+DefineDomainInclude:0104_Entity_Command
+
+    | Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.
+
+    Entity:Command
+        Attribute
+            Code_Name : Code
+        State
+
+            |-----------
+
+            DynamicState:Process_Command
+                StateAction
+                    Template
+                        <<TabIn>>
+                        <<TabIn>>
+                        <<:>>EVENT => Machinery::Actuator:Device_command ("<<#Command.Code>>")
+                        <<:>>
+                        <<TabOut>>
+                        <<TabOut>>
+                Transition
+                    EventState
+                        Action_state -> Process_Command

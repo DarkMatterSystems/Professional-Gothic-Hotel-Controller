@@ -1,0 +1,328 @@
+﻿
+Setting environment for using Microsoft Visual Studio 2010 x86 tools.
+
+    Matrix Model Compiler - Professional Edition - SID/ANSIC/001 - Version 2.2.1
+    Architecture Design: Simple Interleaved Design - Version 1.3.2
+    Programming Templates: ANSI C/C++ - Version 1.2.0
+    Licenced to: Mike Finn, Dark Matter Systems Ltd
+    Single User Licence - Number: BB-72-02-87 - Expiry Date: None
+    Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.
+    Support: support@ultradark.com - Website: www.analysisdesignmatrix.com
+
+    Connection established: MATRIX*CORE - Version 2.0.0
+
+        Development on MON-07-AUG-2017 @ 14:10:02
+
+        Model Name:
+            Prof_Gothic_Hotel_Controller
+        Matrix Model Folder:
+            M:\Matrix\Models
+        Generated Source Code:
+            M:\Matrix\Generated
+        Auxiliary Scenarios Folder:
+            M:\Matrix\Scenarios
+
+        System:Prof_Gothic_Hotel_Controller
+            Matrix:Model:Application
+                Silo:M1:Software_Application
+                    Realm:Analysis_Of_Application
+                        Domain:Controller
+                            Entity:
+                                Event
+                                Transition
+                                State
+                                Command
+                                State_Machine
+
+        Model Compilation Elapsed Time: 00:00:02
+
+    Disconnected from MATRIX*CORE on MON-07-AUG-2017 @ 14:10:04
+
+
+MATRIX PASSED
+
+
+~ProfGothicHotelController.0001.0001.Library.c
+~ProfGothicHotelController.0001.0002.ErrorHandler.c
+~ProfGothicHotelController.0001.0003.MainProgram.c
+~ProfGothicHotelController.0001.0005.Scheduler.c
+~ProfGothicHotelController.0001.0006.LiteralStrings.c
+~ProfGothicHotelController.0001.0007.Enumerations.c
+~ProfGothicHotelController.0003.0002.Transition.StateActions.c
+~ProfGothicHotelController.0002.0002.Scheduler.c
+~ProfGothicHotelController.0002.0003.SchedulerInitialisation.c
+~ProfGothicHotelController.0002.0004.ProcessIncludes.c
+~ProfGothicHotelController.0003.0001.Event.EventSenders.c
+~ProfGothicHotelController.0003.0001.Event.Identifiers.c
+~ProfGothicHotelController.0003.0002.Transition.DataAccess.c
+~ProfGothicHotelController.0003.0001.Event.Dispatcher.c
+~ProfGothicHotelController.0003.0004.Command.StateActions.c
+~ProfGothicHotelController.0003.0001.Event.ProcessIncludes.c
+~ProfGothicHotelController.0003.0003.State.EventSenders.c
+~ProfGothicHotelController.0003.0002.Transition.Identifiers.c
+~ProfGothicHotelController.0003.0003.State.DataAccess.c
+~ProfGothicHotelController.0003.0002.Transition.Dispatcher.c
+Generating Code...
+Compiling...
+~ProfGothicHotelController.0003.0001.Event.DataAccess.c
+~ProfGothicHotelController.0003.0002.Transition.ProcessIncludes.c
+~ProfGothicHotelController.0003.0002.Transition.EventSenders.c
+~ProfGothicHotelController.0003.0003.State.Identifiers.c
+~ProfGothicHotelController.0003.0004.Command.DataAccess.c
+~ProfGothicHotelController.0003.0003.State.Dispatcher.c
+~ProfGothicHotelController.0003.0001.Event.StateActions.c
+~ProfGothicHotelController.0003.0003.State.ProcessIncludes.c
+~ProfGothicHotelController.0003.0004.Command.EventSenders.c
+~ProfGothicHotelController.0003.0004.Command.Identifiers.c
+~ProfGothicHotelController.0003.0005.StateMachine.DataAccess.c
+~ProfGothicHotelController.0003.0004.Command.Dispatcher.c
+~ProfGothicHotelController.0003.0004.Command.ProcessIncludes.c
+~ProfGothicHotelController.0002.0001.Initialisation.c
+~ProfGothicHotelController.0003.0005.StateMachine.Identifiers.c
+~ProfGothicHotelController.0011.0001.Simulator.Configuration.c
+~ProfGothicHotelController.0011.0002.Simulator.LiteralStrings.c
+~ProfGothicHotelController.0011.0003.Simulator.Stimulate.c
+~ProfGothicHotelController.0012.0001.Simulator.Event.EntityDisplay.c
+~ProfGothicHotelController.0012.0001.Simulator.Event.EventAcquireIdentity.c
+Generating Code...
+Compiling...
+~ProfGothicHotelController.0012.0002.Simulator.Transition.EventDisplay.c
+~ProfGothicHotelController.0012.0001.Simulator.Event.StateDisplay.c
+~ProfGothicHotelController.0012.0001.Simulator.Event.EventAcquireIdentifier.c
+~ProfGothicHotelController.0012.0002.Simulator.Transition.EntityDisplay.c
+~ProfGothicHotelController.0012.0002.Simulator.Transition.EventAcquireIdentity.c
+~ProfGothicHotelController.0012.0003.Simulator.State.EventDisplay.c
+~ProfGothicHotelController.0012.0002.Simulator.Transition.StateDisplay.c
+~ProfGothicHotelController.0012.0002.Simulator.Transition.EventAcquireIdentifier.c
+~ProfGothicHotelController.0012.0003.Simulator.State.EntityDisplay.c
+~ProfGothicHotelController.0012.0003.Simulator.State.EventAcquireIdentity.c
+~ProfGothicHotelController.0012.0004.Simulator.Command.EventDisplay.c
+~ProfGothicHotelController.0012.0003.Simulator.State.StateDisplay.c
+~ProfGothicHotelController.0012.0003.Simulator.State.EventAcquireIdentifier.c
+~ProfGothicHotelController.0012.0004.Simulator.Command.EntityDisplay.c
+~ProfGothicHotelController.0012.0004.Simulator.Command.EventAcquireIdentity.c
+~ProfGothicHotelController.0012.0004.Simulator.Command.StateDisplay.c
+~ProfGothicHotelController.0012.0004.Simulator.Command.EventAcquireIdentifier.c
+~ProfGothicHotelController.0012.0005.Simulator.StateMachine.EntityDisplay.c
+~ProfGothicHotelController.0003.0003.State.StateActions.c
+~ProfGothicHotelController.0012.0001.Simulator.Event.EventDisplay.c
+Generating Code...
+Compiling...
+~ProfGothicHotelController.0001.0004.Initialisation.c
+Generating Code...
+
+
+COMPILE PASSED
+
+
+    Matrix Model Simulator - Learning Edition - Version 2.0.0
+    Development on MON-07-AUG-2017 @ 14:10:08
+    Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.
+
+    Connection established: MATRIX*CORE - Version 2.0.0
+
+$
+$ | Professional Gothic Hotel Controller Scenario
+$
+$ trace all off
+$ trace display on
+$ trace events off
+$ trace states off
+$
+$ initialise all
+$
+$ display all
+$
+$
+$ |     Event Code  Description          Command Code  Description
+$ |     ~~~~~~~~~~  ~~~~~~~~~~~~~        ~~~~~~~~~~~~  ~~~~~~~~~~~~
+$ |           D1CL  Door Closed                  D1LK  Lock Door
+$ |           L1ON  Light On                     D1UL  Unlock Door
+$ |           D2OP  Drawer Opened                PNLK  Lock Panel
+$ |           PNCL  Panel Closed                 PNUL  Unlock Panel
+$ |           D1OP  Door Opened
+$
+$
+$ | Normal Unlocking Scenarios
+$ | ##########################
+$
+$ | Normal Unlocking Via Light Then Drawer
+$ | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$
+$ | Room Door Closes [D1CL - Door Closed]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1CL"
+
+$
+$ | Light Switched On [L1ON - Light On]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "L1ON"
+
+$
+$ | Drawer Opens [D2OP - Drawer Opened]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D2OP"
+
+        EVENT => Machinery::Actuator:Device_command ("D1LK")
+
+        EVENT => Machinery::Actuator:Device_command ("PNUL")
+
+$
+$ | Panel Closed [PNCL - Panel Closed] The only way to unlock the Room Door after
+$ | the Unlocking Sequence has been completed is to open and close the Secret
+$ | Panel.
+$ create event identifier Controller Event Device_update Event_Code_Identifier "PNCL"
+
+        EVENT => Machinery::Actuator:Device_command ("PNLK")
+
+        EVENT => Machinery::Actuator:Device_command ("D1UL")
+
+$
+$ | Door Opens - Resets All When Panel Closed [D1OP - Door Opened]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1OP"
+
+$
+$
+$ | Normal Unlocking Via Drawer Then Light
+$ | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$
+$ | Room Door Closes [D1CL - Door Closed]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1CL"
+
+$
+$ | Drawer Opens [D2OP - Drawer Opened]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D2OP"
+
+$
+$ | Light Switched On [L1ON - Light On]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "L1ON"
+
+        EVENT => Machinery::Actuator:Device_command ("D1LK")
+
+        EVENT => Machinery::Actuator:Device_command ("PNUL")
+
+$
+$ | Drawer Opens In Error - Ignore event. Still Need Door Locked And Panel
+$ | Unlocked [D2OP - Drawer Opened]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D2OP"
+
+$
+$ | Panel Closed [PNCL - Panel Closed]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "PNCL"
+
+        EVENT => Machinery::Actuator:Device_command ("PNLK")
+
+        EVENT => Machinery::Actuator:Device_command ("D1UL")
+
+$
+$ | Door Opens - Resets All When Panel Closed [D1OP - Door Opened]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1OP"
+
+$
+$
+$ | Aborted Unlocking Scenarios
+$ | ###########################
+$
+$ | Aborted Unlocking Via Light
+$ | ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$
+$ | Room Door Closes [D1CL - Door Closed]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1CL"
+
+$
+$ | Light Switched On [L1ON - Light On]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "L1ON"
+
+$
+$ | Light Switched On Again - Wrong Step [L1ON - Light On]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "L1ON"
+
+        EVENT => Machinery::Actuator:Device_command ("PNLK")
+
+        EVENT => Machinery::Actuator:Device_command ("D1UL")
+
+$
+$ | Drawer Opens - Try Anyway [D2OP - Drawer Opened]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D2OP"
+
+$
+$ | Door Opens - Resets All When Panel Closed - Never Locked [D1OP - Door Opened]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1OP"
+
+$
+$
+$ | Aborted Unlocking Via Door Opens
+$ | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$
+$ | Room Door Closes [D1CL - Door Closed]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1CL"
+
+$
+$ | Light Switched On [L1ON - Light On]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "L1ON"
+
+$
+$ | Door Opens - Resets All When Panel Closed [D1OP - Door Opened]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1OP"
+
+$
+$
+$ | Cannot Happen Scenarios
+$ | #######################
+$
+$ | Unexpectedly Close Panel
+$ | ~~~~~~~~~~~~~~~~~~~~~~~~
+$
+$ | Room Door Closes [D1CL - Door Closed] The Secret Panel can only close after
+$ | being unlocked. It can only be unlocked after a valid Unlocking Sequence has
+$ | been entered.
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1CL"
+
+$
+$ | Panel Closed [PNCL - Panel Closed] Physically impossible. Event should be
+$ | impossible to receive after the last. Suspect Secret Panel Sensor failure.
+$ create event identifier Controller Event Device_update Event_Code_Identifier "PNCL"
+
+        EVENT => Machinery::Actuator:Device_command ("PNLK")
+
+        EVENT => Machinery::Actuator:Device_command ("D1UL")
+
+$
+$
+$ | Unexpectedly Open Door
+$ | ~~~~~~~~~~~~~~~~~~~~~~
+$
+$ | Room Door Closes [D1CL - Door Closed]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1CL"
+
+$
+$ | Light Switched On [L1ON - Light On]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "L1ON"
+
+$
+$ | Drawer Opens [D2OP - Drawer Opened] The Door locks.
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D2OP"
+
+$
+$ | Door Opens [D1OP - Door Opened] Physically impossible. Event should be
+$ | impossible to receive after the last. Door is still locked. Suspect Drawer
+$ | Sensor failure.
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1OP"
+
+$
+$
+$ display all
+$
+$ host pause
+$
+$ exit
+
+        Model Simulation Elapsed Time: 00:00:00
+
+    Disconnected from MATRIX*CORE on MON-07-AUG-2017 @ 14:10:08
+
+
+
+TEST PASSED
+
+
+
+
+Tool completed successfully

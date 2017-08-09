@@ -1,0 +1,1022 @@
+﻿
+Setting environment for using Microsoft Visual Studio 2010 x86 tools.
+
+    Matrix Model Compiler - Professional Edition - SID/ANSIC/001 - Version 2.2.1
+    Architecture Design: Simple Interleaved Design - Version 1.3.2
+    Programming Templates: ANSI C/C++ - Version 1.2.0
+    Licenced to: Mike Finn, Dark Matter Systems Ltd
+    Single User Licence - Number: BB-72-02-87 - Expiry Date: None
+    Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.
+    Support: support@ultradark.com - Website: www.analysisdesignmatrix.com
+
+    Connection established: MATRIX*CORE - Version 2.0.0
+
+        Development on WED-09-AUG-2017 @ 10:51:40
+
+        Model Name:
+            Prof_Gothic_Hotel_Controller
+        Matrix Model Folder:
+            M:\Matrix\Models
+        Generated Source Code:
+            M:\Matrix\Generated
+        Auxiliary Scenarios Folder:
+            M:\Matrix\Scenarios
+
+        System:Prof_Gothic_Hotel_Controller
+            Matrix:Model:Application
+                Silo:M1:Software_Application
+                    Realm:Analysis_Of_Application
+                        Domain:Controller
+                            Entity:
+                                Event
+                                Transition
+                                State
+                                Command
+                                State_Machine
+
+        Model Compilation Elapsed Time: 00:00:02
+
+    Disconnected from MATRIX*CORE on WED-09-AUG-2017 @ 10:51:42
+
+
+MATRIX PASSED
+
+
+~ProfGothicHotelController.0001.0001.Library.c
+~ProfGothicHotelController.0001.0002.ErrorHandler.c
+~ProfGothicHotelController.0001.0003.MainProgram.c
+~ProfGothicHotelController.0001.0005.Scheduler.c
+~ProfGothicHotelController.0001.0006.LiteralStrings.c
+~ProfGothicHotelController.0001.0007.Enumerations.c
+~ProfGothicHotelController.0003.0002.Transition.StateActions.c
+~ProfGothicHotelController.0002.0002.Scheduler.c
+~ProfGothicHotelController.0002.0003.SchedulerInitialisation.c
+~ProfGothicHotelController.0002.0004.ProcessIncludes.c
+~ProfGothicHotelController.0003.0001.Event.EventSenders.c
+~ProfGothicHotelController.0003.0001.Event.Identifiers.c
+~ProfGothicHotelController.0003.0002.Transition.DataAccess.c
+~ProfGothicHotelController.0003.0001.Event.Dispatcher.c
+~ProfGothicHotelController.0003.0004.Command.StateActions.c
+~ProfGothicHotelController.0003.0001.Event.ProcessIncludes.c
+~ProfGothicHotelController.0003.0003.State.EventSenders.c
+~ProfGothicHotelController.0003.0002.Transition.Identifiers.c
+~ProfGothicHotelController.0003.0003.State.DataAccess.c
+~ProfGothicHotelController.0003.0002.Transition.Dispatcher.c
+Generating Code...
+Compiling...
+~ProfGothicHotelController.0003.0001.Event.DataAccess.c
+~ProfGothicHotelController.0003.0002.Transition.ProcessIncludes.c
+~ProfGothicHotelController.0003.0002.Transition.EventSenders.c
+~ProfGothicHotelController.0003.0003.State.Identifiers.c
+~ProfGothicHotelController.0003.0004.Command.DataAccess.c
+~ProfGothicHotelController.0003.0003.State.Dispatcher.c
+~ProfGothicHotelController.0003.0001.Event.StateActions.c
+~ProfGothicHotelController.0003.0003.State.ProcessIncludes.c
+~ProfGothicHotelController.0003.0004.Command.EventSenders.c
+~ProfGothicHotelController.0003.0004.Command.Identifiers.c
+~ProfGothicHotelController.0003.0005.StateMachine.DataAccess.c
+~ProfGothicHotelController.0003.0004.Command.Dispatcher.c
+~ProfGothicHotelController.0003.0004.Command.ProcessIncludes.c
+~ProfGothicHotelController.0002.0001.Initialisation.c
+~ProfGothicHotelController.0003.0005.StateMachine.Identifiers.c
+~ProfGothicHotelController.0011.0001.Simulator.Configuration.c
+~ProfGothicHotelController.0011.0002.Simulator.LiteralStrings.c
+~ProfGothicHotelController.0011.0003.Simulator.Stimulate.c
+~ProfGothicHotelController.0012.0001.Simulator.Event.EntityDisplay.c
+~ProfGothicHotelController.0012.0001.Simulator.Event.EventAcquireIdentity.c
+Generating Code...
+Compiling...
+~ProfGothicHotelController.0012.0002.Simulator.Transition.EventDisplay.c
+~ProfGothicHotelController.0012.0001.Simulator.Event.StateDisplay.c
+~ProfGothicHotelController.0012.0001.Simulator.Event.EventAcquireIdentifier.c
+~ProfGothicHotelController.0012.0002.Simulator.Transition.EntityDisplay.c
+~ProfGothicHotelController.0012.0002.Simulator.Transition.EventAcquireIdentity.c
+~ProfGothicHotelController.0012.0003.Simulator.State.EventDisplay.c
+~ProfGothicHotelController.0012.0002.Simulator.Transition.StateDisplay.c
+~ProfGothicHotelController.0012.0002.Simulator.Transition.EventAcquireIdentifier.c
+~ProfGothicHotelController.0012.0003.Simulator.State.EntityDisplay.c
+~ProfGothicHotelController.0012.0003.Simulator.State.EventAcquireIdentity.c
+~ProfGothicHotelController.0012.0004.Simulator.Command.EventDisplay.c
+~ProfGothicHotelController.0012.0003.Simulator.State.StateDisplay.c
+~ProfGothicHotelController.0012.0003.Simulator.State.EventAcquireIdentifier.c
+~ProfGothicHotelController.0012.0004.Simulator.Command.EntityDisplay.c
+~ProfGothicHotelController.0012.0004.Simulator.Command.EventAcquireIdentity.c
+~ProfGothicHotelController.0012.0004.Simulator.Command.StateDisplay.c
+~ProfGothicHotelController.0012.0004.Simulator.Command.EventAcquireIdentifier.c
+~ProfGothicHotelController.0012.0005.Simulator.StateMachine.EntityDisplay.c
+~ProfGothicHotelController.0003.0003.State.StateActions.c
+~ProfGothicHotelController.0012.0001.Simulator.Event.EventDisplay.c
+Generating Code...
+Compiling...
+~ProfGothicHotelController.0001.0004.Initialisation.c
+Generating Code...
+
+
+COMPILE PASSED
+
+
+    Matrix Model Simulator - Learning Edition - Version 2.0.0
+    Development on WED-09-AUG-2017 @ 10:51:48
+    Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.
+
+    Connection established: MATRIX*CORE - Version 2.0.0
+
+$
+$ | Professional Gothic Hotel Controller Scenario
+$
+$ trace all on
+$ trace display on
+$ trace events on
+$ trace states on
+$
+$ initialise all
+$
+$ display all
+
+Event:
+    Identity  Status  Code
+    ~~~~~~~~  ~~~~~~  ~~~~~~
+           1  Idle    "D1CL"
+           2  Idle    "L1ON"
+           3  Idle    "D2OP"
+           4  Idle    "PNCL"
+           5  Idle    "D1OP"
+
+Transition:
+    Identity  Status              Processed
+    ~~~~~~~~  ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~
+           1  Process_Transition  False
+           2  Process_Transition  False
+           3  Process_Transition  False
+           4  Process_Transition  False
+           5  Process_Transition  False
+           6  Process_Transition  False
+           7  Process_Transition  False
+           8  Process_Transition  False
+           9  Process_Transition  False
+          10  Process_Transition  False
+          11  Process_Transition  False
+          12  Process_Transition  False
+          13  Process_Transition  False
+          14  Process_Transition  False
+          15  Process_Transition  False
+          16  Process_Transition  False
+
+State:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~~~~~~~~
+           1  Process_State
+           2  Process_State
+           3  Process_State
+           4  Process_State
+           5  Process_State
+
+Command:
+    Identity  Status           Code
+    ~~~~~~~~  ~~~~~~~~~~~~~~~  ~~~~~~
+           1  Process_Command  "D1LK"
+           2  Process_Command  "D1UL"
+           3  Process_Command  "PNLK"
+           4  Process_Command  "PNUL"
+
+State_Machine:
+    Identity
+    ~~~~~~~~
+           1
+
+$
+$
+$ |     Event Code  Description          Command Code  Description
+$ |     ~~~~~~~~~~  ~~~~~~~~~~~~~        ~~~~~~~~~~~~  ~~~~~~~~~~~~
+$ |           D1CL  Door Closed                  D1LK  Lock Door
+$ |           L1ON  Light On                     D1UL  Unlock Door
+$ |           D2OP  Drawer Opened                PNLK  Lock Panel
+$ |           PNCL  Panel Closed                 PNUL  Unlock Panel
+$ |           D1OP  Door Opened
+$
+$
+$ | Normal Unlocking Scenarios
+$ | ##########################
+$
+$ | Normal Unlocking Via Light Then Drawer
+$ | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$
+$ | Room Door Closes [D1CL - Door Closed]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1CL"
+
+EVENT (0:0:0) - Event[1] Device_update ()
+
+    STATE (2:37:26) - Event[1] Initialising {Device_update -> Idle} ()
+
+        EVENT (2:40:25) - Event[1] Done ()
+
+    STATE (2:52:26) - Event[1] Process_Event {Done -> Initialising} ()
+
+        EVENT (2:78:45) - Transition[1] Action_event ()
+
+    STATE (3:17:26) - Transition[1] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:40:49) - State[2] Action_transition ()
+
+        EVENT (3:42:41) - Event[1] State_processed ()
+
+    STATE (4:14:26) - State[2] Process_State {Action_transition -> Process_State} ()
+
+    STATE (2:18:26) - Event[1] Idle {State_processed -> Process_Event} ()
+
+$
+$ | Light Switched On [L1ON - Light On]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "L1ON"
+
+EVENT (0:0:0) - Event[2] Device_update ()
+
+    STATE (2:37:26) - Event[2] Initialising {Device_update -> Idle} ()
+
+        EVENT (2:40:25) - Event[2] Done ()
+
+    STATE (2:52:26) - Event[2] Process_Event {Done -> Initialising} ()
+
+        EVENT (2:78:45) - Transition[2] Action_event ()
+
+    STATE (3:17:26) - Transition[2] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:40:49) - State[4] Action_transition ()
+
+        EVENT (3:42:41) - Event[2] State_processed ()
+
+    STATE (4:14:26) - State[4] Process_State {Action_transition -> Process_State} ()
+
+    STATE (2:18:26) - Event[2] Idle {State_processed -> Process_Event} ()
+
+$
+$ | Drawer Opens [D2OP - Drawer Opened]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D2OP"
+
+EVENT (0:0:0) - Event[3] Device_update ()
+
+    STATE (2:37:26) - Event[3] Initialising {Device_update -> Idle} ()
+
+        EVENT (2:40:25) - Event[3] Done ()
+
+    STATE (2:52:26) - Event[3] Process_Event {Done -> Initialising} ()
+
+        EVENT (2:78:45) - Transition[5] Action_event ()
+
+    STATE (3:17:26) - Transition[5] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[3] State_not_found ()
+
+    STATE (2:52:26) - Event[3] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[6] Action_event ()
+
+    STATE (3:17:26) - Transition[6] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[3] State_not_found ()
+
+    STATE (2:52:26) - Event[3] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[7] Action_event ()
+
+    STATE (3:17:26) - Transition[7] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:40:49) - State[5] Action_transition ()
+
+        EVENT (3:42:41) - Event[3] State_processed ()
+
+    STATE (4:14:26) - State[5] Process_State {Action_transition -> Process_State} ()
+
+        EVENT (4:21:33) - Command[1] Action_state ()
+
+        EVENT (4:21:33) - Command[4] Action_state ()
+
+    STATE (5:13:26) - Command[1] Process_Command {Action_state -> Process_Command} ()
+
+        EVENT => Machinery::Actuator:Device_command ("D1LK")
+
+    STATE (2:18:26) - Event[3] Idle {State_processed -> Process_Event} ()
+
+    STATE (5:13:26) - Command[4] Process_Command {Action_state -> Process_Command} ()
+
+        EVENT => Machinery::Actuator:Device_command ("PNUL")
+
+$
+$ | Panel Closed [PNCL - Panel Closed] The only way to unlock the Room Door after
+$ | the Unlocking Sequence has been completed is to open and close the Secret
+$ | Panel.
+$ create event identifier Controller Event Device_update Event_Code_Identifier "PNCL"
+
+EVENT (0:0:0) - Event[4] Device_update ()
+
+    STATE (2:37:26) - Event[4] Initialising {Device_update -> Idle} ()
+
+        EVENT (2:40:25) - Event[4] Done ()
+
+    STATE (2:52:26) - Event[4] Process_Event {Done -> Initialising} ()
+
+        EVENT (2:78:45) - Transition[8] Action_event ()
+
+    STATE (3:17:26) - Transition[8] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[4] State_not_found ()
+
+    STATE (2:52:26) - Event[4] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[9] Action_event ()
+
+    STATE (3:17:26) - Transition[9] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[4] State_not_found ()
+
+    STATE (2:52:26) - Event[4] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[10] Action_event ()
+
+    STATE (3:17:26) - Transition[10] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[4] State_not_found ()
+
+    STATE (2:52:26) - Event[4] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[11] Action_event ()
+
+    STATE (3:17:26) - Transition[11] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[4] State_not_found ()
+
+    STATE (2:52:26) - Event[4] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[12] Action_event ()
+
+    STATE (3:17:26) - Transition[12] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:40:49) - State[1] Action_transition ()
+
+        EVENT (3:42:41) - Event[4] State_processed ()
+
+    STATE (4:14:26) - State[1] Process_State {Action_transition -> Process_State} ()
+
+        EVENT (4:21:33) - Command[3] Action_state ()
+
+        EVENT (4:21:33) - Command[2] Action_state ()
+
+    STATE (5:13:26) - Command[3] Process_Command {Action_state -> Process_Command} ()
+
+        EVENT => Machinery::Actuator:Device_command ("PNLK")
+
+    STATE (2:18:26) - Event[4] Idle {State_processed -> Process_Event} ()
+
+    STATE (5:13:26) - Command[2] Process_Command {Action_state -> Process_Command} ()
+
+        EVENT => Machinery::Actuator:Device_command ("D1UL")
+
+$
+$ | Door Opens - Resets All When Panel Closed [D1OP - Door Opened]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1OP"
+
+EVENT (0:0:0) - Event[5] Device_update ()
+
+    STATE (2:37:26) - Event[5] Initialising {Device_update -> Idle} ()
+
+        EVENT (2:40:25) - Event[5] Done ()
+
+    STATE (2:52:26) - Event[5] Process_Event {Done -> Initialising} ()
+
+        EVENT (2:78:45) - Transition[13] Action_event ()
+
+    STATE (3:17:26) - Transition[13] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[5] State_not_found ()
+
+    STATE (2:52:26) - Event[5] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[14] Action_event ()
+
+    STATE (3:17:26) - Transition[14] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[5] State_not_found ()
+
+    STATE (2:52:26) - Event[5] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[15] Action_event ()
+
+    STATE (3:17:26) - Transition[15] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[5] State_not_found ()
+
+    STATE (2:52:26) - Event[5] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[16] Action_event ()
+
+    STATE (3:17:26) - Transition[16] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[5] State_not_found ()
+
+    STATE (2:52:26) - Event[5] Process_Event {State_not_found -> Process_Event} ()
+
+$
+$
+$ | Normal Unlocking Via Drawer Then Light
+$ | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$
+$ | Room Door Closes [D1CL - Door Closed]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1CL"
+
+EVENT (0:0:0) - Event[1] Device_update ()
+
+    STATE (2:37:26) - Event[1] Initialising {Device_update -> Idle} ()
+
+        EVENT (2:40:25) - Event[1] Done ()
+
+    STATE (2:52:26) - Event[1] Process_Event {Done -> Initialising} ()
+
+        EVENT (2:78:45) - Transition[1] Action_event ()
+
+    STATE (3:17:26) - Transition[1] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:40:49) - State[2] Action_transition ()
+
+        EVENT (3:42:41) - Event[1] State_processed ()
+
+    STATE (4:14:26) - State[2] Process_State {Action_transition -> Process_State} ()
+
+    STATE (2:18:26) - Event[1] Idle {State_processed -> Process_Event} ()
+
+$
+$ | Drawer Opens [D2OP - Drawer Opened]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D2OP"
+
+EVENT (0:0:0) - Event[3] Device_update ()
+
+    STATE (2:37:26) - Event[3] Initialising {Device_update -> Idle} ()
+
+        EVENT (2:40:25) - Event[3] Done ()
+
+    STATE (2:52:26) - Event[3] Process_Event {Done -> Initialising} ()
+
+        EVENT (2:78:45) - Transition[5] Action_event ()
+
+    STATE (3:17:26) - Transition[5] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:40:49) - State[3] Action_transition ()
+
+        EVENT (3:42:41) - Event[3] State_processed ()
+
+    STATE (4:14:26) - State[3] Process_State {Action_transition -> Process_State} ()
+
+    STATE (2:18:26) - Event[3] Idle {State_processed -> Process_Event} ()
+
+$
+$ | Light Switched On [L1ON - Light On]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "L1ON"
+
+EVENT (0:0:0) - Event[2] Device_update ()
+
+    STATE (2:37:26) - Event[2] Initialising {Device_update -> Idle} ()
+
+        EVENT (2:40:25) - Event[2] Done ()
+
+    STATE (2:52:26) - Event[2] Process_Event {Done -> Initialising} ()
+
+        EVENT (2:78:45) - Transition[2] Action_event ()
+
+    STATE (3:17:26) - Transition[2] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[2] State_not_found ()
+
+    STATE (2:52:26) - Event[2] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[3] Action_event ()
+
+    STATE (3:17:26) - Transition[3] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:40:49) - State[5] Action_transition ()
+
+        EVENT (3:42:41) - Event[2] State_processed ()
+
+    STATE (4:14:26) - State[5] Process_State {Action_transition -> Process_State} ()
+
+        EVENT (4:21:33) - Command[1] Action_state ()
+
+        EVENT (4:21:33) - Command[4] Action_state ()
+
+    STATE (5:13:26) - Command[1] Process_Command {Action_state -> Process_Command} ()
+
+        EVENT => Machinery::Actuator:Device_command ("D1LK")
+
+    STATE (2:18:26) - Event[2] Idle {State_processed -> Process_Event} ()
+
+    STATE (5:13:26) - Command[4] Process_Command {Action_state -> Process_Command} ()
+
+        EVENT => Machinery::Actuator:Device_command ("PNUL")
+
+$
+$ | Drawer Opens In Error - Ignore event. Still Need Door Locked And Panel
+$ | Unlocked [D2OP - Drawer Opened]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D2OP"
+
+EVENT (0:0:0) - Event[3] Device_update ()
+
+    STATE (2:37:26) - Event[3] Initialising {Device_update -> Idle} ()
+
+        EVENT (2:40:25) - Event[3] Done ()
+
+    STATE (2:52:26) - Event[3] Process_Event {Done -> Initialising} ()
+
+        EVENT (2:78:45) - Transition[5] Action_event ()
+
+    STATE (3:17:26) - Transition[5] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[3] State_not_found ()
+
+    STATE (2:52:26) - Event[3] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[6] Action_event ()
+
+    STATE (3:17:26) - Transition[6] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[3] State_not_found ()
+
+    STATE (2:52:26) - Event[3] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[7] Action_event ()
+
+    STATE (3:17:26) - Transition[7] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[3] State_not_found ()
+
+    STATE (2:52:26) - Event[3] Process_Event {State_not_found -> Process_Event} ()
+
+$
+$ | Panel Closed [PNCL - Panel Closed]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "PNCL"
+
+EVENT (0:0:0) - Event[4] Device_update ()
+
+    STATE (2:37:26) - Event[4] Initialising {Device_update -> Idle} ()
+
+        EVENT (2:40:25) - Event[4] Done ()
+
+    STATE (2:52:26) - Event[4] Process_Event {Done -> Initialising} ()
+
+        EVENT (2:78:45) - Transition[8] Action_event ()
+
+    STATE (3:17:26) - Transition[8] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[4] State_not_found ()
+
+    STATE (2:52:26) - Event[4] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[9] Action_event ()
+
+    STATE (3:17:26) - Transition[9] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[4] State_not_found ()
+
+    STATE (2:52:26) - Event[4] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[10] Action_event ()
+
+    STATE (3:17:26) - Transition[10] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[4] State_not_found ()
+
+    STATE (2:52:26) - Event[4] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[11] Action_event ()
+
+    STATE (3:17:26) - Transition[11] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[4] State_not_found ()
+
+    STATE (2:52:26) - Event[4] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[12] Action_event ()
+
+    STATE (3:17:26) - Transition[12] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:40:49) - State[1] Action_transition ()
+
+        EVENT (3:42:41) - Event[4] State_processed ()
+
+    STATE (4:14:26) - State[1] Process_State {Action_transition -> Process_State} ()
+
+        EVENT (4:21:33) - Command[3] Action_state ()
+
+        EVENT (4:21:33) - Command[2] Action_state ()
+
+    STATE (5:13:26) - Command[3] Process_Command {Action_state -> Process_Command} ()
+
+        EVENT => Machinery::Actuator:Device_command ("PNLK")
+
+    STATE (2:18:26) - Event[4] Idle {State_processed -> Process_Event} ()
+
+    STATE (5:13:26) - Command[2] Process_Command {Action_state -> Process_Command} ()
+
+        EVENT => Machinery::Actuator:Device_command ("D1UL")
+
+$
+$ | Door Opens - Resets All When Panel Closed [D1OP - Door Opened]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1OP"
+
+EVENT (0:0:0) - Event[5] Device_update ()
+
+$
+$
+$ | Aborted Unlocking Scenarios
+$ | ###########################
+$
+$ | Aborted Unlocking Via Light
+$ | ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$
+$ | Room Door Closes [D1CL - Door Closed]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1CL"
+
+EVENT (0:0:0) - Event[1] Device_update ()
+
+    STATE (2:37:26) - Event[1] Initialising {Device_update -> Idle} ()
+
+        EVENT (2:40:25) - Event[1] Done ()
+
+    STATE (2:52:26) - Event[1] Process_Event {Done -> Initialising} ()
+
+        EVENT (2:78:45) - Transition[1] Action_event ()
+
+    STATE (3:17:26) - Transition[1] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:40:49) - State[2] Action_transition ()
+
+        EVENT (3:42:41) - Event[1] State_processed ()
+
+    STATE (4:14:26) - State[2] Process_State {Action_transition -> Process_State} ()
+
+    STATE (2:18:26) - Event[1] Idle {State_processed -> Process_Event} ()
+
+$
+$ | Light Switched On [L1ON - Light On]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "L1ON"
+
+EVENT (0:0:0) - Event[2] Device_update ()
+
+    STATE (2:37:26) - Event[2] Initialising {Device_update -> Idle} ()
+
+        EVENT (2:40:25) - Event[2] Done ()
+
+    STATE (2:52:26) - Event[2] Process_Event {Done -> Initialising} ()
+
+        EVENT (2:78:45) - Transition[2] Action_event ()
+
+    STATE (3:17:26) - Transition[2] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:40:49) - State[4] Action_transition ()
+
+        EVENT (3:42:41) - Event[2] State_processed ()
+
+    STATE (4:14:26) - State[4] Process_State {Action_transition -> Process_State} ()
+
+    STATE (2:18:26) - Event[2] Idle {State_processed -> Process_Event} ()
+
+$
+$ | Light Switched On Again - Wrong Step [L1ON - Light On]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "L1ON"
+
+EVENT (0:0:0) - Event[2] Device_update ()
+
+    STATE (2:37:26) - Event[2] Initialising {Device_update -> Idle} ()
+
+        EVENT (2:40:25) - Event[2] Done ()
+
+    STATE (2:52:26) - Event[2] Process_Event {Done -> Initialising} ()
+
+        EVENT (2:78:45) - Transition[2] Action_event ()
+
+    STATE (3:17:26) - Transition[2] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[2] State_not_found ()
+
+    STATE (2:52:26) - Event[2] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[3] Action_event ()
+
+    STATE (3:17:26) - Transition[3] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[2] State_not_found ()
+
+    STATE (2:52:26) - Event[2] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[4] Action_event ()
+
+    STATE (3:17:26) - Transition[4] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:40:49) - State[1] Action_transition ()
+
+        EVENT (3:42:41) - Event[2] State_processed ()
+
+    STATE (4:14:26) - State[1] Process_State {Action_transition -> Process_State} ()
+
+        EVENT (4:21:33) - Command[3] Action_state ()
+
+        EVENT (4:21:33) - Command[2] Action_state ()
+
+    STATE (5:13:26) - Command[3] Process_Command {Action_state -> Process_Command} ()
+
+        EVENT => Machinery::Actuator:Device_command ("PNLK")
+
+    STATE (2:18:26) - Event[2] Idle {State_processed -> Process_Event} ()
+
+    STATE (5:13:26) - Command[2] Process_Command {Action_state -> Process_Command} ()
+
+        EVENT => Machinery::Actuator:Device_command ("D1UL")
+
+$
+$ | Drawer Opens - Try Anyway [D2OP - Drawer Opened]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D2OP"
+
+EVENT (0:0:0) - Event[3] Device_update ()
+
+$
+$ | Door Opens - Resets All When Panel Closed - Never Locked [D1OP - Door Opened]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1OP"
+
+EVENT (0:0:0) - Event[5] Device_update ()
+
+$
+$
+$ | Aborted Unlocking Via Door Opens
+$ | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$
+$ | Room Door Closes [D1CL - Door Closed]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1CL"
+
+EVENT (0:0:0) - Event[1] Device_update ()
+
+    STATE (2:37:26) - Event[1] Initialising {Device_update -> Idle} ()
+
+        EVENT (2:40:25) - Event[1] Done ()
+
+    STATE (2:52:26) - Event[1] Process_Event {Done -> Initialising} ()
+
+        EVENT (2:78:45) - Transition[1] Action_event ()
+
+    STATE (3:17:26) - Transition[1] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:40:49) - State[2] Action_transition ()
+
+        EVENT (3:42:41) - Event[1] State_processed ()
+
+    STATE (4:14:26) - State[2] Process_State {Action_transition -> Process_State} ()
+
+    STATE (2:18:26) - Event[1] Idle {State_processed -> Process_Event} ()
+
+$
+$ | Light Switched On [L1ON - Light On]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "L1ON"
+
+EVENT (0:0:0) - Event[2] Device_update ()
+
+    STATE (2:37:26) - Event[2] Initialising {Device_update -> Idle} ()
+
+        EVENT (2:40:25) - Event[2] Done ()
+
+    STATE (2:52:26) - Event[2] Process_Event {Done -> Initialising} ()
+
+        EVENT (2:78:45) - Transition[2] Action_event ()
+
+    STATE (3:17:26) - Transition[2] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:40:49) - State[4] Action_transition ()
+
+        EVENT (3:42:41) - Event[2] State_processed ()
+
+    STATE (4:14:26) - State[4] Process_State {Action_transition -> Process_State} ()
+
+    STATE (2:18:26) - Event[2] Idle {State_processed -> Process_Event} ()
+
+$
+$ | Door Opens - Resets All When Panel Closed [D1OP - Door Opened]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1OP"
+
+EVENT (0:0:0) - Event[5] Device_update ()
+
+$
+$
+$ | Cannot Happen Scenarios
+$ | #######################
+$
+$ | Unexpectedly Close Panel
+$ | ~~~~~~~~~~~~~~~~~~~~~~~~
+$
+$ | Room Door Closes [D1CL - Door Closed] The Secret Panel can only close after
+$ | being unlocked. It can only be unlocked after a valid Unlocking Sequence has
+$ | been entered.
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1CL"
+
+EVENT (0:0:0) - Event[1] Device_update ()
+
+    STATE (2:37:26) - Event[1] Initialising {Device_update -> Idle} ()
+
+        EVENT (2:40:25) - Event[1] Done ()
+
+    STATE (2:52:26) - Event[1] Process_Event {Done -> Initialising} ()
+
+        EVENT (2:78:45) - Transition[1] Action_event ()
+
+    STATE (3:17:26) - Transition[1] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[1] State_not_found ()
+
+    STATE (2:52:26) - Event[1] Process_Event {State_not_found -> Process_Event} ()
+
+$
+$ | Panel Closed [PNCL - Panel Closed] Physically impossible. Event should be
+$ | impossible to receive after the last. Suspect Secret Panel Sensor failure.
+$ create event identifier Controller Event Device_update Event_Code_Identifier "PNCL"
+
+EVENT (0:0:0) - Event[4] Device_update ()
+
+    STATE (2:37:26) - Event[4] Initialising {Device_update -> Idle} ()
+
+        EVENT (2:40:25) - Event[4] Done ()
+
+    STATE (2:52:26) - Event[4] Process_Event {Done -> Initialising} ()
+
+        EVENT (2:78:45) - Transition[8] Action_event ()
+
+    STATE (3:17:26) - Transition[8] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[4] State_not_found ()
+
+    STATE (2:52:26) - Event[4] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[9] Action_event ()
+
+    STATE (3:17:26) - Transition[9] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[4] State_not_found ()
+
+    STATE (2:52:26) - Event[4] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[10] Action_event ()
+
+    STATE (3:17:26) - Transition[10] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[4] State_not_found ()
+
+    STATE (2:52:26) - Event[4] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[11] Action_event ()
+
+    STATE (3:17:26) - Transition[11] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:40:49) - State[1] Action_transition ()
+
+        EVENT (3:42:41) - Event[4] State_processed ()
+
+    STATE (4:14:26) - State[1] Process_State {Action_transition -> Process_State} ()
+
+        EVENT (4:21:33) - Command[3] Action_state ()
+
+        EVENT (4:21:33) - Command[2] Action_state ()
+
+    STATE (5:13:26) - Command[3] Process_Command {Action_state -> Process_Command} ()
+
+        EVENT => Machinery::Actuator:Device_command ("PNLK")
+
+    STATE (2:18:26) - Event[4] Idle {State_processed -> Process_Event} ()
+
+    STATE (5:13:26) - Command[2] Process_Command {Action_state -> Process_Command} ()
+
+        EVENT => Machinery::Actuator:Device_command ("D1UL")
+
+$
+$
+$ | Unexpectedly Open Door
+$ | ~~~~~~~~~~~~~~~~~~~~~~
+$
+$ | Room Door Closes [D1CL - Door Closed]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1CL"
+
+EVENT (0:0:0) - Event[1] Device_update ()
+
+$
+$ | Light Switched On [L1ON - Light On]
+$ create event identifier Controller Event Device_update Event_Code_Identifier "L1ON"
+
+EVENT (0:0:0) - Event[2] Device_update ()
+
+    STATE (2:37:26) - Event[2] Initialising {Device_update -> Idle} ()
+
+        EVENT (2:40:25) - Event[2] Done ()
+
+    STATE (2:52:26) - Event[2] Process_Event {Done -> Initialising} ()
+
+        EVENT (2:78:45) - Transition[2] Action_event ()
+
+    STATE (3:17:26) - Transition[2] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[2] State_not_found ()
+
+    STATE (2:52:26) - Event[2] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[3] Action_event ()
+
+    STATE (3:17:26) - Transition[3] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[2] State_not_found ()
+
+    STATE (2:52:26) - Event[2] Process_Event {State_not_found -> Process_Event} ()
+
+        EVENT (2:78:45) - Transition[4] Action_event ()
+
+    STATE (3:17:26) - Transition[4] Process_Transition {Action_event -> Process_Transition} ()
+
+        EVENT (3:48:41) - Event[2] State_not_found ()
+
+    STATE (2:52:26) - Event[2] Process_Event {State_not_found -> Process_Event} ()
+
+$
+$ | Drawer Opens [D2OP - Drawer Opened] The Door locks.
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D2OP"
+
+EVENT (0:0:0) - Event[3] Device_update ()
+
+$
+$ | Door Opens [D1OP - Door Opened] Physically impossible. Event should be
+$ | impossible to receive after the last. Door is still locked. Suspect Drawer
+$ | Sensor failure.
+$ create event identifier Controller Event Device_update Event_Code_Identifier "D1OP"
+
+EVENT (0:0:0) - Event[5] Device_update ()
+
+$
+$
+$ display all
+
+Event:
+    Identity  Status         Code
+    ~~~~~~~~  ~~~~~~~~~~~~~  ~~~~~~
+           1  Process_Event  "D1CL"
+           2  Process_Event  "L1ON"
+           3  Process_Event  "D2OP"
+           4  Idle           "PNCL"
+           5  Process_Event  "D1OP"
+
+Transition:
+    Identity  Status              Processed
+    ~~~~~~~~  ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~
+           1  Process_Transition  True
+           2  Process_Transition  True
+           3  Process_Transition  True
+           4  Process_Transition  True
+           5  Process_Transition  True
+           6  Process_Transition  True
+           7  Process_Transition  True
+           8  Process_Transition  False
+           9  Process_Transition  False
+          10  Process_Transition  False
+          11  Process_Transition  False
+          12  Process_Transition  False
+          13  Process_Transition  True
+          14  Process_Transition  True
+          15  Process_Transition  True
+          16  Process_Transition  True
+
+State:
+    Identity  Status
+    ~~~~~~~~  ~~~~~~~~~~~~~
+           1  Process_State
+           2  Process_State
+           3  Process_State
+           4  Process_State
+           5  Process_State
+
+Command:
+    Identity  Status           Code
+    ~~~~~~~~  ~~~~~~~~~~~~~~~  ~~~~~~
+           1  Process_Command  "D1LK"
+           2  Process_Command  "D1UL"
+           3  Process_Command  "PNLK"
+           4  Process_Command  "PNUL"
+
+State_Machine:
+    Identity
+    ~~~~~~~~
+           1
+
+$
+$ host pause
+$
+$ exit
+
+        Model Simulation Elapsed Time: 00:00:01
+
+    Disconnected from MATRIX*CORE on WED-09-AUG-2017 @ 10:51:49
+
+
+
+TEST PASSED
+
+
+
+
+Tool completed successfully

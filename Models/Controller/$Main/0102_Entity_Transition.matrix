@@ -1,0 +1,53 @@
+
+DefineDomainInclude:0102_Entity_Transition
+
+    | Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.
+
+    Entity:Transition
+        Attribute
+            Flag : Processed
+        Relationship
+            Consumed_by        |>> State
+            Moves_to_next      --> State
+            Determines_current -|> Event
+        State
+
+            |-----------
+
+            DynamicState:Process_Transition
+                | State invoked for each possible Transition.
+                StateAction
+                    Traverse
+                        Navigation
+                            Transition : Determines_current : Event
+                        TraverseSelection
+                            Traverse
+                                Navigation
+                                    Transition : Consumed_by             : State
+                                    State      : Marks_current_state_for : State_Machine
+                                TraverseSelection
+                                    | Subregion in current source State ONE context.
+                                    Traverse
+                                        Navigation
+                                            Transition : Moves_to_next : State
+                                        TraverseSelection
+                                            | Subregion in new target State ONE context -> Update current state.
+                                            Unrelate
+                                                State^1 : Marks_current_state_for : State_Machine
+                                            Relate
+                                                State^0 : Marks_current_state_for : State_Machine
+                                            GenerateEvent
+                                                State : Action_transition
+                                    GenerateEvent
+                                        Event : State_processed
+                                NullTraverseSelection
+                                    Assignment
+                                        SetBoolean
+                                            Transition.Processed := <<True>>
+                                    GenerateEvent
+                                        Event : State_not_found
+                            Unrelate
+                                Transition : Determines_current : Event
+                Transition
+                    EventState
+                        Action_event -> Process_Transition

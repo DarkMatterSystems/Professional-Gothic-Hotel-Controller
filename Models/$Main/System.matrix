@@ -1,0 +1,48 @@
+
+System:Prof_Gothic_Hotel_Controller
+
+    | Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.
+
+    Description
+        Paragraph:Heading
+            Professional Gothic Hotel Controller Model
+        Paragraph:Content
+            The original Gothic Hotel description and model can be found here:
+            http://www.informit.com/articles/article.aspx?p=1592379
+
+    Type
+        BaseType
+            Boolean
+                Flag
+            String
+                Code_Name : 4
+
+    Matrix:Model:Application
+        Silo:M1:Software_Application
+            Realm:Analysis_Of_Application
+                Domain:Controller
+
+                    EventContext
+                        ImportEvent
+                            |
+                            | Controls Domain
+                            |
+                            Event : Device_update
+
+                    |===========================================================
+
+                    DomainInclude
+                        0101_Entity_Event
+                        0102_Entity_Transition
+                        0103_Entity_State
+                        0104_Entity_Command
+
+                    |===========================================================
+
+                    NullEntity
+                        State_Machine
+
+        |=======================================================================
+
+        MatrixInclude
+            0200_Silo_Real_World_Objects

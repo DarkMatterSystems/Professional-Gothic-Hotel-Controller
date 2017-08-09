@@ -1,0 +1,145 @@
+
+| Professional Gothic Hotel Controller Scenario
+
+trace all on
+trace display on
+trace events on
+trace states on
+
+initialise all
+
+display all
+
+
+|     Event Code  Description          Command Code  Description
+|     ~~~~~~~~~~  ~~~~~~~~~~~~~        ~~~~~~~~~~~~  ~~~~~~~~~~~~
+|           D1CL  Door Closed                  D1LK  Lock Door
+|           L1ON  Light On                     D1UL  Unlock Door
+|           D2OP  Drawer Opened                PNLK  Lock Panel
+|           PNCL  Panel Closed                 PNUL  Unlock Panel
+|           D1OP  Door Opened
+
+
+| Normal Unlocking Scenarios
+| ##########################
+
+| Normal Unlocking Via Light Then Drawer
+| ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+| Room Door Closes [D1CL - Door Closed]
+create event identifier Controller Event Device_update Event_Code_Identifier "D1CL"
+
+| Light Switched On [L1ON - Light On]
+create event identifier Controller Event Device_update Event_Code_Identifier "L1ON"
+
+| Drawer Opens [D2OP - Drawer Opened]
+create event identifier Controller Event Device_update Event_Code_Identifier "D2OP"
+
+| Panel Closed [PNCL - Panel Closed] The only way to unlock the Room Door after
+| the Unlocking Sequence has been completed is to open and close the Secret
+| Panel.
+create event identifier Controller Event Device_update Event_Code_Identifier "PNCL"
+
+| Door Opens - Resets All When Panel Closed [D1OP - Door Opened]
+create event identifier Controller Event Device_update Event_Code_Identifier "D1OP"
+
+
+| Normal Unlocking Via Drawer Then Light
+| ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+| Room Door Closes [D1CL - Door Closed]
+create event identifier Controller Event Device_update Event_Code_Identifier "D1CL"
+
+| Drawer Opens [D2OP - Drawer Opened]
+create event identifier Controller Event Device_update Event_Code_Identifier "D2OP"
+
+| Light Switched On [L1ON - Light On]
+create event identifier Controller Event Device_update Event_Code_Identifier "L1ON"
+
+| Drawer Opens In Error - Ignore event. Still Need Door Locked And Panel
+| Unlocked [D2OP - Drawer Opened]
+create event identifier Controller Event Device_update Event_Code_Identifier "D2OP"
+
+| Panel Closed [PNCL - Panel Closed]
+create event identifier Controller Event Device_update Event_Code_Identifier "PNCL"
+
+| Door Opens - Resets All When Panel Closed [D1OP - Door Opened]
+create event identifier Controller Event Device_update Event_Code_Identifier "D1OP"
+
+
+| Aborted Unlocking Scenarios
+| ###########################
+
+| Aborted Unlocking Via Light
+| ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+| Room Door Closes [D1CL - Door Closed]
+create event identifier Controller Event Device_update Event_Code_Identifier "D1CL"
+
+| Light Switched On [L1ON - Light On]
+create event identifier Controller Event Device_update Event_Code_Identifier "L1ON"
+
+| Light Switched On Again - Wrong Step [L1ON - Light On]
+create event identifier Controller Event Device_update Event_Code_Identifier "L1ON"
+
+| Drawer Opens - Try Anyway [D2OP - Drawer Opened]
+create event identifier Controller Event Device_update Event_Code_Identifier "D2OP"
+
+| Door Opens - Resets All When Panel Closed - Never Locked [D1OP - Door Opened]
+create event identifier Controller Event Device_update Event_Code_Identifier "D1OP"
+
+
+| Aborted Unlocking Via Door Opens
+| ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+| Room Door Closes [D1CL - Door Closed]
+create event identifier Controller Event Device_update Event_Code_Identifier "D1CL"
+
+| Light Switched On [L1ON - Light On]
+create event identifier Controller Event Device_update Event_Code_Identifier "L1ON"
+
+| Door Opens - Resets All When Panel Closed [D1OP - Door Opened]
+create event identifier Controller Event Device_update Event_Code_Identifier "D1OP"
+
+
+| Cannot Happen Scenarios
+| #######################
+
+| Unexpectedly Close Panel
+| ~~~~~~~~~~~~~~~~~~~~~~~~
+
+| Room Door Closes [D1CL - Door Closed] The Secret Panel can only close after
+| being unlocked. It can only be unlocked after a valid Unlocking Sequence has
+| been entered.
+create event identifier Controller Event Device_update Event_Code_Identifier "D1CL"
+
+| Panel Closed [PNCL - Panel Closed] Physically impossible. Event should be
+| impossible to receive after the last. Suspect Secret Panel Sensor failure.
+create event identifier Controller Event Device_update Event_Code_Identifier "PNCL"
+
+
+| Unexpectedly Open Door
+| ~~~~~~~~~~~~~~~~~~~~~~
+
+| Room Door Closes [D1CL - Door Closed]
+create event identifier Controller Event Device_update Event_Code_Identifier "D1CL"
+
+| Light Switched On [L1ON - Light On]
+create event identifier Controller Event Device_update Event_Code_Identifier "L1ON"
+
+| Drawer Opens [D2OP - Drawer Opened] The Door locks.
+create event identifier Controller Event Device_update Event_Code_Identifier "D2OP"
+
+| Door Opens [D1OP - Door Opened] Physically impossible. Event should be
+| impossible to receive after the last. Door is still locked. Suspect Drawer
+| Sensor failure.
+create event identifier Controller Event Device_update Event_Code_Identifier "D1OP"
+
+
+display all
+
+host pause
+
+exit
+
+| Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.

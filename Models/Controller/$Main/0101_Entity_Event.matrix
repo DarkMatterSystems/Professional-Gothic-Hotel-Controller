@@ -1,0 +1,86 @@
+
+DefineDomainInclude:0101_Entity_Event
+
+    | Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.
+
+    Entity:Event
+        Attribute
+            Code_Name : Code
+        Relationship
+            Consumed_by |>> Transition
+        Identifier:Event_Code_Identifier
+            OwnKey
+                Code
+        State
+
+            |-----------
+
+            DynamicState:Idle
+                StateAction
+                    Traverse
+                        Navigation
+                            Event : Consumed_by : Transition
+                        TraverseSelection
+                            Assignment
+                                SetBoolean
+                                    Transition.Processed := <<False>>
+                Transition
+                    EventState
+                        Device_update -> Initialising
+                    CannotHappen
+                        State_processed
+                        State_not_found
+                        Done
+
+            |-----------
+
+            DynamicState:Initialising
+                StateAction
+                    GenerateEvent
+                        Event : Done
+                Transition
+                    EventState
+                        Done -> Process_Event
+                    IgnoreEvent
+                        Device_update
+                    CannotHappen
+                        State_processed
+                        State_not_found
+
+            |-----------
+
+            DynamicState:Process_Event
+                ProcessData
+                    Flag : object_not_found
+                StateAction
+                    Assignment
+                        SetBoolean
+                            object_not_found := <<True>>
+                    Traverse
+                        Navigation
+                            Event : Consumed_by : Transition
+                        TraverseSelection
+                            CaseSelection
+                                WhenCase
+                                    ConditionAnd
+                                        BooleanAnd
+                                            object_not_found
+                                        BooleanNand
+                                            Transition.Processed
+                                    WhenCaseSelection
+                                        Assignment
+                                            SetBoolean
+                                                object_not_found     := <<False>>
+                                                Transition.Processed := <<True>>
+                                        Relate
+                                            Transition : Determines_current : Event
+                                        GenerateEvent
+                                            Transition : Action_event
+                Transition
+                    EventState
+                        State_processed -> Idle
+                        State_not_found -> Process_Event
+                    IgnoreEvent
+                        Device_update
+                    CannotHappen
+                        Done

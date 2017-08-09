@@ -1,0 +1,24 @@
+
+DefineDomainInclude:0103_Entity_State
+
+    | Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.
+
+    Entity:State
+        Relationship
+            Invokes                 |>> Command
+            Marks_current_state_for -|> State_Machine
+        State
+
+            |-----------
+
+            DynamicState:Process_State
+                StateAction
+                    Traverse
+                        Navigation
+                            State : Invokes : Command
+                        TraverseSelection
+                            GenerateEvent
+                                Command : Action_state
+                Transition
+                    EventState
+                        Action_transition -> Process_State

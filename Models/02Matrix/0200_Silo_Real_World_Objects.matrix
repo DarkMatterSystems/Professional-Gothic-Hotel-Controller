@@ -1,0 +1,127 @@
+
+DefineMatrixInclude:0200_Silo_Real_World_Objects
+
+    | Copyright (C) 2017 Dark Matter Systems Ltd. All rights reserved.
+
+    Silo:M0:Real_World_Objects
+        RealmObject:Objects_Of_Analysis
+            DomainObject:Controller
+
+                |-----------
+
+                EntityObject:Event
+                    Object
+                        | Identity          | State | Code
+                        EVENT_DOOR_CLOSED   : Idle  : "D1CL"
+                        EVENT_LIGHT_ON      : Idle  : "L1ON"
+                        EVENT_DRAWER_OPENED : Idle  : "D2OP"
+                        EVENT_PANEL_CLOSED  : Idle  : "PNCL"
+                        EVENT_DOOR_OPENED   : Idle  : "D1OP"
+                    ObjectRelation:Consumed_by:Transition
+                        EVENT_DOOR_CLOSED   : EVENT_DOOR_CLOSED_STATE_IDLE
+                        EVENT_LIGHT_ON      : EVENT_LIGHT_ON_STATE_ACTIVE
+                        EVENT_LIGHT_ON      : EVENT_LIGHT_ON_STATE_WAITING_FOR_LIGHT
+                        EVENT_LIGHT_ON      : EVENT_LIGHT_ON_STATE_WAITING_FOR_DRAWER
+                        EVENT_DRAWER_OPENED : EVENT_DRAWER_OPENED_STATE_ACTIVE
+                        EVENT_DRAWER_OPENED : EVENT_DRAWER_OPENED_STATE_WAITING_FOR_LIGHT
+                        EVENT_DRAWER_OPENED : EVENT_DRAWER_OPENED_STATE_WAITING_FOR_DRAWER
+                        EVENT_PANEL_CLOSED  : EVENT_PANEL_CLOSED_STATE_IDLE
+                        EVENT_PANEL_CLOSED  : EVENT_PANEL_CLOSED_STATE_ACTIVE
+                        EVENT_PANEL_CLOSED  : EVENT_PANEL_CLOSED_STATE_WAITING_FOR_LIGHT
+                        EVENT_PANEL_CLOSED  : EVENT_PANEL_CLOSED_STATE_WAITING_FOR_DRAWER
+                        EVENT_PANEL_CLOSED  : EVENT_PANEL_CLOSED_STATE_UNLOCKED_PANEL
+                        EVENT_DOOR_OPENED   : EVENT_DOOR_OPENED_STATE_ACTIVE
+                        EVENT_DOOR_OPENED   : EVENT_DOOR_OPENED_STATE_WAITING_FOR_LIGHT
+                        EVENT_DOOR_OPENED   : EVENT_DOOR_OPENED_STATE_WAITING_FOR_DRAWER
+                        EVENT_DOOR_OPENED   : EVENT_DOOR_OPENED_STATE_UNLOCKED_PANEL
+
+                |-----------
+
+                EntityObject:Transition
+                    Object
+                        | Identity                                   | State              | Processed
+                        EVENT_DOOR_CLOSED_STATE_IDLE                 : Process_Transition : False
+                        EVENT_LIGHT_ON_STATE_ACTIVE                  : Process_Transition : False
+                        EVENT_LIGHT_ON_STATE_WAITING_FOR_LIGHT       : Process_Transition : False
+                        EVENT_LIGHT_ON_STATE_WAITING_FOR_DRAWER      : Process_Transition : False
+                        EVENT_DRAWER_OPENED_STATE_ACTIVE             : Process_Transition : False
+                        EVENT_DRAWER_OPENED_STATE_WAITING_FOR_LIGHT  : Process_Transition : False
+                        EVENT_DRAWER_OPENED_STATE_WAITING_FOR_DRAWER : Process_Transition : False
+                        EVENT_PANEL_CLOSED_STATE_IDLE                : Process_Transition : False
+                        EVENT_PANEL_CLOSED_STATE_ACTIVE              : Process_Transition : False
+                        EVENT_PANEL_CLOSED_STATE_WAITING_FOR_LIGHT   : Process_Transition : False
+                        EVENT_PANEL_CLOSED_STATE_WAITING_FOR_DRAWER  : Process_Transition : False
+                        EVENT_PANEL_CLOSED_STATE_UNLOCKED_PANEL      : Process_Transition : False
+                        EVENT_DOOR_OPENED_STATE_ACTIVE               : Process_Transition : False
+                        EVENT_DOOR_OPENED_STATE_WAITING_FOR_LIGHT    : Process_Transition : False
+                        EVENT_DOOR_OPENED_STATE_WAITING_FOR_DRAWER   : Process_Transition : False
+                        EVENT_DOOR_OPENED_STATE_UNLOCKED_PANEL       : Process_Transition : False
+                    ObjectRelation:Consumed_by:State
+                        EVENT_DOOR_CLOSED_STATE_IDLE                 : STATE_IDLE
+                        EVENT_LIGHT_ON_STATE_ACTIVE                  : STATE_ACTIVE
+                        EVENT_LIGHT_ON_STATE_WAITING_FOR_LIGHT       : STATE_WAITING_FOR_LIGHT
+                        EVENT_LIGHT_ON_STATE_WAITING_FOR_DRAWER      : STATE_WAITING_FOR_DRAWER
+                        EVENT_DRAWER_OPENED_STATE_ACTIVE             : STATE_ACTIVE
+                        EVENT_DRAWER_OPENED_STATE_WAITING_FOR_LIGHT  : STATE_WAITING_FOR_LIGHT
+                        EVENT_DRAWER_OPENED_STATE_WAITING_FOR_DRAWER : STATE_WAITING_FOR_DRAWER
+                        EVENT_PANEL_CLOSED_STATE_IDLE                : STATE_IDLE
+                        EVENT_PANEL_CLOSED_STATE_ACTIVE              : STATE_ACTIVE
+                        EVENT_PANEL_CLOSED_STATE_WAITING_FOR_LIGHT   : STATE_WAITING_FOR_LIGHT
+                        EVENT_PANEL_CLOSED_STATE_WAITING_FOR_DRAWER  : STATE_WAITING_FOR_DRAWER
+                        EVENT_PANEL_CLOSED_STATE_UNLOCKED_PANEL      : STATE_UNLOCKED_PANEL
+                        EVENT_DOOR_OPENED_STATE_ACTIVE               : STATE_ACTIVE
+                        EVENT_DOOR_OPENED_STATE_WAITING_FOR_LIGHT    : STATE_WAITING_FOR_LIGHT
+                        EVENT_DOOR_OPENED_STATE_WAITING_FOR_DRAWER   : STATE_WAITING_FOR_DRAWER
+                        EVENT_DOOR_OPENED_STATE_UNLOCKED_PANEL       : STATE_UNLOCKED_PANEL
+                    ObjectRelation:Moves_to_next:State
+                        EVENT_DOOR_CLOSED_STATE_IDLE                 : STATE_ACTIVE
+                        EVENT_LIGHT_ON_STATE_ACTIVE                  : STATE_WAITING_FOR_DRAWER
+                        EVENT_LIGHT_ON_STATE_WAITING_FOR_LIGHT       : STATE_UNLOCKED_PANEL
+                        EVENT_LIGHT_ON_STATE_WAITING_FOR_DRAWER      : STATE_IDLE
+                        EVENT_DRAWER_OPENED_STATE_ACTIVE             : STATE_WAITING_FOR_LIGHT
+                        EVENT_DRAWER_OPENED_STATE_WAITING_FOR_LIGHT  : STATE_IDLE
+                        EVENT_DRAWER_OPENED_STATE_WAITING_FOR_DRAWER : STATE_UNLOCKED_PANEL
+                        EVENT_PANEL_CLOSED_STATE_IDLE                : STATE_IDLE
+                        EVENT_PANEL_CLOSED_STATE_ACTIVE              : STATE_IDLE
+                        EVENT_PANEL_CLOSED_STATE_WAITING_FOR_LIGHT   : STATE_IDLE
+                        EVENT_PANEL_CLOSED_STATE_WAITING_FOR_DRAWER  : STATE_IDLE
+                        EVENT_PANEL_CLOSED_STATE_UNLOCKED_PANEL      : STATE_IDLE
+                        EVENT_DOOR_OPENED_STATE_ACTIVE               : STATE_IDLE
+                        EVENT_DOOR_OPENED_STATE_WAITING_FOR_LIGHT    : STATE_IDLE
+                        EVENT_DOOR_OPENED_STATE_WAITING_FOR_DRAWER   : STATE_IDLE
+                        EVENT_DOOR_OPENED_STATE_UNLOCKED_PANEL       : STATE_IDLE
+
+                |-----------
+
+                EntityObject:State
+                    Object
+                        | Identity               | State
+                        STATE_IDLE               : Process_State
+                        STATE_ACTIVE             : Process_State
+                        STATE_WAITING_FOR_LIGHT  : Process_State
+                        STATE_WAITING_FOR_DRAWER : Process_State
+                        STATE_UNLOCKED_PANEL     : Process_State
+                    ObjectRelation:Marks_current_state_for:State_Machine
+                        STATE_IDLE : STATE_MACHINE
+                    ObjectRelation:Invokes:Command
+                        STATE_IDLE           : LOCK_PANEL
+                        STATE_IDLE           : UNLOCK_DOOR
+                        STATE_UNLOCKED_PANEL : LOCK_DOOR
+                        STATE_UNLOCKED_PANEL : UNLOCK_PANEL
+
+                |-----------
+
+                EntityObject:Command
+                    Object
+                        | Identity   | State           | Code
+                        LOCK_DOOR    : Process_Command : "D1LK"
+                        UNLOCK_DOOR  : Process_Command : "D1UL"
+                        LOCK_PANEL   : Process_Command : "PNLK"
+                        UNLOCK_PANEL : Process_Command : "PNUL"
+
+                |-----------
+
+                EntityObject:State_Machine
+                    Object
+                        | Identity
+                        STATE_MACHINE
